@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "XHWeatherViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    
+    XHWeatherViewController* weatherVC = [[XHWeatherViewController alloc] init];
+    //self.window.backgroundColor = [UIColor redColor];
+    UINavigationController *navi = [[UINavigationController alloc] init];
+    //  [navi addChildViewController:weatherVC];
+    self.window.rootViewController = navi;
+    [self.window makeKeyAndVisible];
+    
+    
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.0 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        
+        weatherVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [navi presentViewController:weatherVC animated:YES completion:NULL];
+        
+    });
     return YES;
 }
 
