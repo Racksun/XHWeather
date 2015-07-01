@@ -13,6 +13,7 @@
 		A31627211B43E92A00C9C845 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A316271F1B43E92A00C9C845 /* LaunchScreen.xib */; };
 		A316272D1B43E92A00C9C845 /* XHWeather_V2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A316272C1B43E92A00C9C845 /* XHWeather_V2Tests.m */; };
 		A31627391B43E9C800C9C845 /* XHWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = A31627381B43E9C800C9C845 /* XHWeather.m */; };
+		A31627401B43EA8300C9C845 /* XHHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A316273F1B43EA8300C9C845 /* XHHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		A316272C1B43E92A00C9C845 /* XHWeather_V2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHWeather_V2Tests.m; sourceTree = "<group>"; };
 		A31627371B43E9C800C9C845 /* XHWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHWeather.h; sourceTree = "<group>"; };
 		A31627381B43E9C800C9C845 /* XHWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHWeather.m; sourceTree = "<group>"; };
+		A316273E1B43EA8300C9C845 /* XHHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHHeaderView.h; sourceTree = "<group>"; };
+		A316273F1B43EA8300C9C845 /* XHHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 		A316270F1B43E92A00C9C845 /* XHWeather-V2 */ = {
 			isa = PBXGroup;
 			children = (
+				A316273A1B43EA1E00C9C845 /* View */,
 				A31627361B43E94600C9C845 /* Modle */,
 				A31627141B43E92A00C9C845 /* AppDelegate.h */,
 				A31627151B43E92A00C9C845 /* AppDelegate.m */,
@@ -122,6 +126,15 @@
 				A31627381B43E9C800C9C845 /* XHWeather.m */,
 			);
 			name = Modle;
+			sourceTree = "<group>";
+		};
+		A316273A1B43EA1E00C9C845 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A316273E1B43EA8300C9C845 /* XHHeaderView.h */,
+				A316273F1B43EA8300C9C845 /* XHHeaderView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31627161B43E92A00C9C845 /* AppDelegate.m in Sources */,
+				A31627401B43EA8300C9C845 /* XHHeaderView.m in Sources */,
 				A31627391B43E9C800C9C845 /* XHWeather.m in Sources */,
 				A31627131B43E92A00C9C845 /* main.m in Sources */,
 			);
